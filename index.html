@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/marioflutuante.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/paralax.css">
+    <style>
+
+        @font-face {
+            font-family: 'SuperMarioFont';
+            src: url('fonts/SuperMario256.ttf') format('truetype'); /* Ajuste o caminho e formato conforme necessário */
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .container1 {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            background-color: transparent;
+        }
+        .responsive-img {
+            width: 100%;
+            height: auto;
+            max-width: 20%;
+        }
+        .container2 {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+            
+
+        }
+        .container3 {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+ 
+        }
+
+        .title {
+            font-family: 'SuperMarioFont', sans-serif; /* Aplica a fonte a um elemento específico */
+        }
+
+      
+        .play-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #ff0000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="wrapper">
+        <main>
+            
+    <section class="module parallax parallax-1">
+    <div class="container1">    
+        <img src="img/logo.png" alt="Imagem Responsiva" class="responsive-img">
+    </div>
+    </section>
+
+    <section class="module parallax parallax-2">
+        
+        <section class="module content">
+            <div class="container2">
+                <div style="margin-left: 10%;">
+                    <h1 class="title">Titulo1</h1>
+                    <p style="color: rgb(255, 0, 0);">asdsadasdasdasdsadasdasdasdasdasdasdas</p>
+                </div> 
+                
+                <div class="marinho">
+                    <img src="img/elmario.png" alt="El Mario da Tecnologia">
+                </div> 
+            </div>  
+        </section>
+            
+</section>
+
+<section class="module parallax parallax-3">
+    <section class="module content">
+    <div class="container3">
+        <div>
+            <img src="img/like.gif" alt="El Mario da Tecnologia">
+        </div> 
+        <div style="margin-right: 10%;">
+            <h1 class="title" >Titulo2</h1>
+            <p">asdsadasdasdasdsadasdasdasdasdasdasdas</p>
+        </div> 
+        
+    </div> 
+    </section> 
+</section>
+
+    <div class="container2">
+        <div style="margin-left: 10%;">
+            <h1 class="title">Titulo3</h1>
+            <p>asdsadasdasdasdsadasdasdasdasdasdasdas</p>
+
+    <div id="audio-container" class="hidden-video">
+        <iframe id="youtube-audio" src="https://www.youtube.com/embed/NTa6Xbzfq1U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+        </div> 
+
+        <div>
+            <img src="img/dance.gif" alt="El Mario da Tecnologia">
+        </div> 
+    </div>  
+
+    <div class="card-container">
+        <div class="card">
+            <div class="card-face card-front">
+                <img src="img/antigo.jpg" alt="Frente do Card 1">
+            </div>
+            <div class="card-face card-back">
+                <h2>Verso 1</h2>
+                <p>Conteúdo do verso do card 1.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-face card-front">
+                <img src="img/medio.jpeg" alt="Frente do Card 2">
+            </div>
+            <div class="card-face card-back">
+                <h2>Verso 2</h2>
+                <p>Conteúdo do verso do card 2.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-face card-front">
+                <img src="img/novo.jpg" alt="Frente do Card 3">
+            </div>
+            <div class="card-face card-back">
+                <h2>Verso 3</h2>
+                <p>Conteúdo do verso do card 3.</p>
+            </div>
+        </div>
+    </div>
+
+</main>
+</div>
+
+<script>
+    function playAudio() {
+        const audioContainer = document.getElementById('audio-container');
+        audioContainer.style.display = 'block'; // Mostra o container do áudio
+
+        // Remove a classe que esconde o vídeo após clicar
+        audioContainer.classList.remove('hidden-video');
+    }
+</script>
+</body>
+</html>
